@@ -34,7 +34,7 @@ async function fetchData(formText) {
 function updateUI(data) {
   document.getElementById(
     "results"
-  ).innerHTML = `${data.label} <br> confidence: ${data.confidence}`;
+  ).innerHTML += `${data.label} <br> confidence: ${data.confidence}<br>-----------------------<br>`;
 }
 
-export { handleSubmit, updateUI };
+export { handleSubmit, fetchData, updateUI };
